@@ -6,7 +6,7 @@ import Marquee from "@/components/Marquee";
 import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import Testimonials from "@/components/testimonials";
 
 
 const page = () => {
