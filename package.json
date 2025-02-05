@@ -1,0 +1,33 @@
+{
+  "name": "elite-verse",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "framer-motion": "^12.0.6",
+    "next": "15.1.6",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-medium-image-zoom": "^5.2.13",
+    "react-modal": "^3.16.3",
+    "react-vertical-timeline-component": "^3.5.3",
+    "resend": "^4.1.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
