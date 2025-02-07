@@ -69,7 +69,7 @@ const BlueprintCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{
-        borderRight: "7px solid #FFD700",
+        borderRight: "7px solid #d78628",
       }}
       iconStyle={{
         background: "#080e19",

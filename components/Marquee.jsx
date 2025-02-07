@@ -7,7 +7,7 @@ const Marquee = () => {
           .map((text, index) => (
             <span
               key={index}
-              className="text-transparent text-[60px] customMarquee sm:text-[65px] md:text-[80px] lg:text-[90px]"
+              className="text-transparent text-[60px] italic customMarquee sm:text-[65px] md:text-[80px] lg:text-[90px]"
             >
               {text}
             </span>

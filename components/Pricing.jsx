@@ -14,12 +14,12 @@ const pricingPlans = [
       { benefit: "Web design & Development", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
+      { benefit: "Google Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
 
       { benefit: "Advanced SEO", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
       { benefit: "AI Chatbots", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
       { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
-      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
     ],
   },
   {
@@ -29,12 +29,12 @@ const pricingPlans = [
       { benefit: "Web design & Development", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
+      { benefit: "Google Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
 
       { benefit: "Advanced SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "AI Chatbots", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
-      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
     ],
   },
   {
@@ -44,12 +44,12 @@ const pricingPlans = [
       { benefit: "Web design & Development", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
+      { benefit: "Google Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
 
       { benefit: "Advanced SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "AI Chatbots", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Paid Ads Management", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Advanced Social Media Strategy", icon: <FaCheckCircle color="#2e5799" /> },
+      { benefit: "Social Media Strategy", icon: <FaCheckCircle color="#2e5799" /> },
     ],
   },
 ];
@@ -75,17 +75,17 @@ const Pricing = () => {
         </h1>
       </div>
 
-      <div className="w-full px-5 sm:px-8 md:px-16 lg:px-24 lg:grid lg:grid-cols-3 lg:grid-rows-1 flex flex-col gap-5">
+      <div className="w-full px-5 sm:px-8 md:px-16 lg:px-24 flex lg:flex-row flex-col justify-between">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className="py-20 mt-10 bg-bgblue rounded-xl flex flex-col duration-300 ease-in-out animate__animated animate__zoomIn animate-delay-1s"
+            className="py-20 mt-10 bg-bgblue rounded-xl flex flex-col duration-300 ease-in-out animate__animated animate__zoomIn animate-delay-1s w-full sm:w-full lg:w-[350px]"
           >
             <div className="flex justify-center items-center flex-col bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text font-bold">
               <h1 className="text-[22px] italic">{`"${plan.planName}"`}</h1>
-              <p className="text-[65px] underline">{plan.planPrice}</p>
+              <p className="text-[65px] price">{plan.planPrice}</p>
             </div>
-            <ul className="mt-10 flex flex-col gap-10 px-10 text-[13px]">
+            <ul className="mt-10 flex flex-col gap-7 px-10 text-[15px]">
               {plan.planBenefits.map((benefits, index) => (
                 <li key={index} className="flex items-center gap-3">
                   {benefits.icon} {benefits.benefit}
@@ -95,15 +95,12 @@ const Pricing = () => {
             <div className="flex justify-center items-center">
               <Link
                 href="https://calendly.com/shaheeraamir/free-consultation-call"
-                className="bg-mainblue mt-10 rounded-3xl py-3 px-10"
+                className="font-bold bg-mainblue mt-10 rounded-3xl py-3 px-10 hover:bg-lightyellow transition-all ease-in-out"
               >
                 Get Started
               </Link>
             </div>
           </div>
-
-
-
         ))}
       </div>
     </div>

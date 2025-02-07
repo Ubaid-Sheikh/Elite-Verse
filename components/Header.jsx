@@ -100,7 +100,7 @@ const Header = () => {
               alt="Elite Verse Agency Header Logo"
               width={150}
               height={50}
-              className="h-auto max-h-[40px] md:max-h-[60px] w-auto"
+              className="h-[60px] max-h-[40px] md:max-h-[60px] w-auto"
             />
           </Link>
 
@@ -161,7 +161,7 @@ const Header = () => {
 
         {/* Mobile Menu Sidebar (now using lg:hidden to display on medium) */}
         <div
-          className={`fixed top-0 right-0 w-full sm:w-[60%] h-[95%] mt-5 rounded-2xl bg-bgblue z-50 flex flex-col items-center pt-10 lg:hidden transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 right-0 w-full p-5 h-[95%] mt-5 rounded-2xl bg-bgblue z-50 flex flex-col items-center pt-10 lg:hidden transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
         >
           {/* Close Button */}
@@ -231,7 +231,7 @@ const Header = () => {
         </button>
 
 
-        <div className="flex h-screen flex-col w-full justify-center items-center">
+        <div className="flex h-screen flex-col w-full justify-center items-center p-3">
           <div className="flex flex-col items-center justify-center">
             <Image
               src="/img/ELITE_VERSE.png"
@@ -240,18 +240,18 @@ const Header = () => {
               width={200}
             />
             <h1 className="text-[25px] text-center lg:text-[35px] font-extrabold text-white font-raleway">
-              Bring us your{" "}
-              <span className="bold text-lightblue">Vision</span>, We'll bring it
-              to <span className="italic text-mainyellow">Life</span>
+              Bring us your
+              Vision, We'll bring it
+              to Life
             </h1>
           </div>
-          <form className="flex flex-col mt-10 gap-5">
+          <form className="flex flex-col mt-10 gap-3 px-5">
             <section className="flex md:flex-row flex-col gap-5 text-white">
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="p-3  rounded-lg bg-darkblue"
+                className="p-3 rounded-[1.2rem] bg-darkblue"
                 value={formData.name}
                 onChange={handleChange}
               />
@@ -259,7 +259,7 @@ const Header = () => {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                className="p-3 w-[400px] rounded-lg bg-darkblue"
+                className="p-3 w-[400px] rounded-[1.2rem] bg-darkblue"
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -268,7 +268,7 @@ const Header = () => {
               cols="30"
               rows="6"
               name="projectIdea"
-              className="bg-darkblue rounded-lg p-3 text-white"
+              className="bg-darkblue rounded-[1.2rem] p-3 text-white"
               placeholder="Your Project Idea"
               value={formData.projectIdea}
               onChange={handleChange}
@@ -280,7 +280,7 @@ const Header = () => {
                 info@elite-verse.com
               </a>
             </Link>
-            <button className="p-2 rounded-lg bg-mainblue text-white font-bold" onClick={handleSubmit}>
+            <button className="py-2 px-4 rounded-full bg-mainblue text-white font-bold" onClick={handleSubmit}>
               Let's make it happen
             </button>
           </div>

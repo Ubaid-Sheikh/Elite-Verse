@@ -72,7 +72,7 @@ const About = () => {
         <div className="flex flex-col text-white items-center lg:items-start">
           <Image src="/img/Free Office Logo Mockup.png" alt="about" height={700} width={700} className="rounded-3xl w-full" />
           <button className="mt-5 lg:mt-2" onClick={() => { setModalOpen(true) }}>
-            <div className="flex bg-white/15 rounded-full px-5 items-center py-2 w-[300px] gap-3">
+            <div className="flex bg-white/15 rounded-full px-1 items-center py-1 w-[300px] gap-3">
               <Image src="/img/done pic.jpg" alt="shaheer" height={50} width={50} className="rounded-full" />
               <div className="flex flex-col">
                 <p className="font-bold">Hear from Shaheer</p>
@@ -81,7 +81,7 @@ const About = () => {
             </div>
           </button>
         </div>
-        <div className="px-5 text-white pt-5">
+        <div className="px-5 text-white pt-5 lg:pt-1">
           <h1>Our elite innovation, premier design, and unwavering commitment to user experience distinguish us as the top choice.</h1>
           <ul className="flex flex-col gap-2 mt-5">
             {about.map((opt, index) => (
@@ -112,7 +112,7 @@ const About = () => {
             onClick={() => setModalOpen(false)}
           ></div>
           {/* Modal Content */}
-          <div className="bg-darkblue rounded-lg p-6 z-10 max-w-[800px] w-full font-raleway flex flex-col gap-4 animate__animated animate__fadeInDown animate-delay-1s">
+          <div className="bg-darkblue text-center rounded-lg p-6 z-10 max-w-[800px] w-full font-raleway flex flex-col gap-4 animate__animated animate__fadeInDown animate-delay-1s">
             <div className="flex justify-between">
               <h2 className="text-2xl font-bold mb-4 text-lightyellow">Why We Are The Ultimate Choice ?</h2>
               <button onClick={() => { setModalOpen(false) }}><ImCross color="#fff" /></button>

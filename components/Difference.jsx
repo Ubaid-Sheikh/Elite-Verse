@@ -52,7 +52,7 @@ const Difference = () => {
               width={200}
             />
           </div>
-          <ul className="flex flex-col gap-10 mt-10 py-5  text-[13px]">
+          <ul className="flex flex-col gap-7 mt-10 py-5  text-[13px]">
             {evBenefits.map((bf, index) => (
               <li key={index} className="flex gap-3 items-center">
                 <FaCheckCircle color="#d78628" /> {bf.opt}
@@ -68,9 +68,9 @@ const Difference = () => {
         <div className="py-10 bg-bgblue rounded-xl mt-10 px-10 w-[350px] sm:w-[600px] lg:w-[500px]">
           <div className="flex flex-col items-center justify-center">
             <Image src="/img/human.png" alt="vs" height={90} width={90} />
-            <p className="text-mainyellow font-bold">Other <span className="text-lightblue">Agencies</span></p>
+            <p className="font-bold">Other Agencies</p>
           </div>
-          <ul className="flex flex-col gap-10 mt-10 py-5 text-[13px]">
+          <ul className="flex flex-col gap-7 mt-10 py-5 text-[13px]">
             {others.map((others, index) => (
               <li key={index} className="flex gap-3 items-center">
                 <TbXboxXFilled color="#a71212" size={17} /> {others.opt}

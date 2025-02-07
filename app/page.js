@@ -1,6 +1,7 @@
 
 import About from "@/components/About";
 import Blueprint from "@/components/Blueprint";
+import CTA from "@/components/CTA";
 import Difference from "@/components/Difference";
 import Marquee from "@/components/Marquee";
 import Portfolio from "@/components/Portfolio";
@@ -22,6 +23,7 @@ const page = () => {
       <Testimonials />
       <Pricing />
       <Marquee />
+      <CTA />
     </div>
   );
 };

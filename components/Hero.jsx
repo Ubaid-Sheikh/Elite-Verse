@@ -22,6 +22,7 @@ const Hero = () => {
         <div className="rounded-full bg-mainblue py-3 px-16 hover:bg-mainyellow transition-all">
           <Link
             href="https://calendly.com/shaheeraamir/free-consultation-call"
+            target="blank"
             className="font-semibold text-[#fff] text-[13px] sm:text-[14px] md:text-[15px] lg-[20px]"
           >
             Speak To Our Expert Team <br />
