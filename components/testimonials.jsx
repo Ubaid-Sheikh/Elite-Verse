@@ -62,22 +62,22 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center py-20 font-poppins text-white">
-      <div className="sm:w-[70%] w-[90%] flex flex-col">
+      <div className="w-full px-5 sm:px-16 md:px-20 lg:px-24 flex flex-col">
         <h2 className="uppercase text-lightblue tracking-widest flex items-center gap-5">
           Client Reviews{" "}
           <span className="flex">
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
           </span>
         </h2>
-        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text sm:text-[42px] text-[30px] font-extrabold">
-          Hear from our satisfied clients!
+        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-extrabold">
+          Hear from our Satisfied Clients!
         </h1>
       </div>
 
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-4 p-4 sm:w-[70%] w-[90%] space-y-4 mt-10">
+      <div className="columns-1 md:columns-2 lg:columns-2 gap-4 space-y-4 mt-10 px-5 sm:px-10 md:px-20 lg:px-24">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -92,11 +92,11 @@ const Testimonials = () => {
                   alt="img"
                   className="rounded-full"
                 />
-                <h3 className="text-mainyellow font-bold text-[20px]">
+                <h3 className="text-mainyellow font-bold text-[15px] md:text-[17px] lg:text-[20px]">
                   {testimonial.name}
                 </h3>
               </div>
-              <p className="text-lightblue font bold text-[15px]">{testimonial.from}</p>
+              <p className="text-lightblue font bold text-[13px] md:text-[15px] lg:text-[17px]">{testimonial.from}</p>
             </div>
             <p className="">{testimonial.remarks}</p>
           </div>

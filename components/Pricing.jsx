@@ -15,11 +15,11 @@ const pricingPlans = [
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Social Media Management & Optimization", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Advanced SEO", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
-      { benefit: "AI Chatbots", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
-      { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
-      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
+
+      { benefit: "Advanced SEO", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "AI Chatbots", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
     ],
   },
   {
@@ -30,11 +30,11 @@ const pricingPlans = [
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Social Media Management & Optimization", icon: <FaCheckCircle color="#2e5799" /> },
+
       { benefit: "Advanced SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "AI Chatbots", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
-      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={20} /> },
+      { benefit: "Paid Ads Management", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
+      { benefit: "Advanced Social Media Strategy", icon: <TbXboxXFilled color="#8B0000" size={15} /> },
     ],
   },
   {
@@ -45,7 +45,7 @@ const pricingPlans = [
       { benefit: "Basic SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Maintenance", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Google Business Profile Optimization", icon: <FaCheckCircle color="#2e5799" /> },
-      { benefit: "Social Media Management & Optimization", icon: <FaCheckCircle color="#2e5799" /> },
+
       { benefit: "Advanced SEO", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "AI Chatbots", icon: <FaCheckCircle color="#2e5799" /> },
       { benefit: "Paid Ads Management", icon: <FaCheckCircle color="#2e5799" /> },
@@ -60,32 +60,32 @@ const pricingPlans = [
 const Pricing = () => {
   return (
     <div id="pricing" className="w-full flex flex-col items-center justify-center py-20 font-poppins text-white">
-      <div className="lg:w-[70%] w-[90%] flex flex-col">
+      <div className="w-full px-5 sm:px-16 md:px-20 lg:px-24 flex flex-col">
         <h2 className="uppercase text-lightblue tracking-widest flex items-center gap-5">
-          Choose Your Growth Path{" "}
+          Choose your Growth Plan!{" "}
           <span className="flex">
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
           </span>
         </h2>
-        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text lg:text-[42px] text-[30px] font-extrabold">
+        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-extrabold">
           Get Top-Tier Digital Growth for your business
         </h1>
       </div>
 
-      <div className="lg:w-[80%] w-[90%] lg:grid lg:grid-cols-3 lg:grid-rows-1 flex flex-col lg:gap-10 gap-4">
+      <div className="w-full px-5 sm:px-8 md:px-16 lg:px-24 lg:grid lg:grid-cols-3 lg:grid-rows-1 flex flex-col gap-5">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className="py-20 mt-10 bg-bgblue rounded-xl flex flex-col transform transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__zoomIn animate-delay-1s"
+            className="py-20 mt-10 bg-bgblue rounded-xl flex flex-col duration-300 ease-in-out animate__animated animate__zoomIn animate-delay-1s"
           >
             <div className="flex justify-center items-center flex-col bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text font-bold">
-              <h1 className="lg:text-[25px] text-[20px] italic">{`"${plan.planName}"`}</h1>
-              <p className="lg:text-[100px] text-[80px]">{plan.planPrice}</p>
+              <h1 className="text-[22px] italic">{`"${plan.planName}"`}</h1>
+              <p className="text-[65px] underline">{plan.planPrice}</p>
             </div>
-            <ul className="lg:px-10 px-4 mt-10 flex flex-col gap-10 text-[17px]">
+            <ul className="mt-10 flex flex-col gap-10 px-10 text-[13px]">
               {plan.planBenefits.map((benefits, index) => (
                 <li key={index} className="flex items-center gap-3">
                   {benefits.icon} {benefits.benefit}

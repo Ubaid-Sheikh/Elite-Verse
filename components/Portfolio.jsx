@@ -88,41 +88,40 @@ const Portfolio = () => {
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
-    setIsZoomed(true); // Zoom in the image when clicked
+    setIsZoomed(true);
   };
 
   const closeOverlay = () => {
-    setIsZoomed(false); // Close zoom when clicked outside the image
-    setSelectedImage(null); // Deselect image
+    setIsZoomed(false);
+    setSelectedImage(null);
   };
 
   return (
     <div
       id="our-work"
-      className="w-full flex flex-col items-center justify-center py-20 font-poppins md:mt-20 mt-10"
+      className="w-full flex flex-col items-center justify-center py-20 sm:pt-30 md:pt-[230px] lg:pt-[230px] font-poppins"
     >
-      {/* Portfolio Grid */}
-      <div className="sm:w-[70%] w-[90%] flex flex-col">
+      <div className="w-full px-5 sm:px-16 md:px-20 lg:px-24 flex flex-col">
         <h2 className="uppercase text-lightblue tracking-widest flex items-center gap-5">
           Portfolio{" "}
           <span className="flex">
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
-            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
+            <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
             <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
           </span>
         </h2>
-        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text sm:text-[42px] text-[30px] font-extrabold">
-          Check Our Previous Projects!
+        <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-extrabold">
+          Check our Previous Projects!
         </h1>
       </div>
 
       {/* Portfolio Grid */}
-      <div className="w-[90%] sm:w-[70%] mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
+      <div className="w-full px-5 sm:px-16 md:px-20 lg:px-24 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {imgs.map((image, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded-xl cursor-pointer animate__animated animate__zoomIn animate__delay-1s"
+            className="relative group overflow-hidden rounded-[20px] cursor-pointer animate__animated animate__zoomIn animate__delay-1s"
             onClick={() => handleImageClick(image)}
           >
             <Image
@@ -156,17 +155,14 @@ const Portfolio = () => {
       </div>
 
       <div
-        className="col-lg-12 order-1 order-lg-2 text-center mt-10 lg:p-3 p-5 animate__animated animate__zoomIn animate-delay-1s"
-        data-aos="zoom-in-up"
-        data-aos-delay="200"
+        className="px-5 sm:px-16 md:px-20 lg:px-24 mt-5 animate__animated animate__zoomIn animate-delay-1s"
       >
         <video
-          className="img-fluid"
+          className="rounded-[20px]"
           autoPlay
           loop
           muted
           playsInline
-          style={{ borderRadius: '20px', width: '100%' }}
         >
           <source src="/img/shopify.mp4" type="video/mp4" />
           Your browser does not support the video tag.

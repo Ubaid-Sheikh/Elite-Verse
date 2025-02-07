@@ -24,11 +24,11 @@ const Footer = () => {
   return (
     <div className="w-full px-4 md:px-8">
       <div className="flex flex-col justify-center items-center w-full lg:w-[70%] m-auto text-white gap-8 lg:gap-0">
-        <div className="flex gap-8 text-white/50">
+        {/* <div className="flex gap-8 text-white/50 flex-col sm:flex-row text-center">
           {impLinks.map((link, index) => (
             <Link href={link.location} key={index}>{link.name}</Link>
           ))}
-        </div>
+        </div> */}
         {/* First Column */}
         <div className="flex flex-col justify-center items-center gap-5 mt-5">
           <div className="relative w-[150px]">

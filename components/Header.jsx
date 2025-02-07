@@ -88,9 +88,9 @@ const Header = () => {
         className="h-screen bg-[url('/img/hero.gif')] bg-cover flex flex-col justify-center items-center bg-center bg-fixed relative"
       >
         <header
-          className={`animate-navbar fixed top-0 md:top-5 w-full md:w-[70%] z-50 flex justify-between items-center text-white py-4 md:py-5 px-4 md:px-7 transition-all ${isSticky
-            ? "bg-[#2d2f3261] bg-opacity-70 backdrop-blur-md md:rounded-full"
-            : "bg-transparent"
+          className={`animate-navbar fixed top-2 z-50 py-5 rounded-full px-3 sm:px-10 md:px-20 flex justify-between text-[14px] items-center text-white transition-all ${isSticky
+            ? "bg-[#2d2f3261] bg-opacity-70 backdrop-blur-md w-[80%]"
+            : "bg-transparent w-[90%]"
             }`}
         >
           {/* Logo */}
@@ -105,7 +105,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation (shows on large screens) */}
-          <nav className="hidden lg:flex gap-7 uppercase font-extrabold">
+          <nav className="hidden lg:flex gap-5 uppercase font-bold">
             {navItems.map((item, index) => (
               <div
                 key={index}
@@ -128,7 +128,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button (Desktop) */}
-          <div className="hidden lg:flex items-center gap-2 bg-[#2e5799] px-4 py-2 rounded-full cursor-pointer hover:bg-lightyellow group transition-all">
+          <div className="hidden lg:flex items-center gap-2 bg-[#2e5799] px-4 py-3 rounded-full cursor-pointer hover:bg-lightyellow group transition-all">
             <button
 
               className="font-bold"
@@ -239,7 +239,7 @@ const Header = () => {
               height={200}
               width={200}
             />
-            <h1 className="md:text-[40px] text-[20px] font-extrabold text-white font-raleway">
+            <h1 className="text-[25px] text-center lg:text-[35px] font-extrabold text-white font-raleway">
               Bring us your{" "}
               <span className="bold text-lightblue">Vision</span>, We'll bring it
               to <span className="italic text-mainyellow">Life</span>

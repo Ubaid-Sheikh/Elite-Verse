@@ -40,7 +40,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  display: hidden;
+  display: none;
 }
 
 .vertical-timeline::before {
@@ -48,7 +48,7 @@ html {
 }
 
 .vertical-timeline-element-content p {
-  font-size: 20px !important;
+  font-size: 17px !important;
 }
 
 .section-gradient {
@@ -66,4 +66,8 @@ html {
 
 .vertical-timeline-element-icon.shadow-size-small {
   box-shadow: 0 0 0 2px var(--color-mainyellow), inset 0 1px 0 rgba(0, 0, 0, .08), 0 2px 0 4px rgba(0, 0, 0, .05) !important; 
+}
+
+.customMarquee {
+  -webkit-text-stroke: 1.2px #fff;
 }

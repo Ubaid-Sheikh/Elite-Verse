@@ -78,10 +78,10 @@ const BlueprintCard = ({ experience }) => {
       icon={experience.logo}
     >
       <div className="font-raleway">
-        <h3 className="sm:text-[30px] text-[20px] font-bold text-lightyellow">
+        <h3 className="text-[17px] sm:text-[19px] md:text-[22px] lg:text-[25px] font-bold text-lightyellow">
           {experience.name}
         </h3>
-        <p className="text-[15px]">{experience.description}</p>
+        <p>{experience.description}</p>
       </div>
     </VerticalTimelineElement>
   );
@@ -91,22 +91,22 @@ const Blueprint = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center py-20 font-poppins">
-        <div className="sm:w-[70%] w-[90%] flex flex-col">
+        <div className="w-full px-5 sm:px-16 md:px-20 lg:px-24 flex flex-col">
           <h2 className="uppercase text-lightblue tracking-widest flex items-center gap-5">
             Step-by-Step Strategy for Taking Your Business to the Next Level{" "}
             <span className="flex">
-              <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
               <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
-              <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />{" "}
+              <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
+              <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
               <TfiLayoutLineSolid className="text-[#fbb02e]" size={30} />
             </span>
           </h2>
-          <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text sm:text-[42px] text-[30px] font-extrabold">
+          <h1 className="uppercase bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-extrabold">
             The Elite Blueprint to Online Success
           </h1>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 w-full px-5 sm:px-16 md:px-20 lg:px-24 ">
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <BlueprintCard
