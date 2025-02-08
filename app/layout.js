@@ -17,8 +17,33 @@ import {
 } from "@/lib/fonts";
 
 export const metadata = {
-  title: "Elite Verse Agency - We Create Websites for Businesses & Brands",
-  description: "Designed and Developed by Ubaid Sheikh",
+  metadataBase: new URL("https://elite-verse.com"),
+  title: "Elite Verse Agency - Web Development & Branding Services",
+  description: "Elite Verse Agency specializes in designing and developing stunning websites for businesses and brands. Elevate your online presence with us!",
+  keywords: "web development, branding, website design, business websites, agency, UI/UX, SEO, web services agency, elite verse, shaheer amir website, ubaid sheikh website, shopify store builder, website builder",
+  icons: {
+    icon: "/img/favicon.ico",
+    shortcut: "/img/android-small.png",
+    apple: "/img/apple-touch-icon.png",
+  },
+  author: [{ name: "Ubaid Sheikh" }, { name: "Shaheer Aamir" }],
+  robots: "index, follow",
+  openGraph: {
+    title: "Elite Verse Agency - Web Development Experts",
+    description:
+      "We create high-performance websites for businesses & brands. Transform your digital presence with Elite Verse Agency.",
+    url: "https://elite-verse.com",
+    siteName: "Elite Verse Agency",
+    images: [
+      {
+        url: "/img/Free Office Logo Mockup.png.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Elite Verse Agency Banner",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -30,7 +55,7 @@ export default function RootLayout({ children }) {
         <div className="flex flex-col">
           <Header />
           {children}
-          <div className="py-10">
+          <div className="py-10 mt-10">
             <Footer />
           </div>
           <hr className="border-white/15" />

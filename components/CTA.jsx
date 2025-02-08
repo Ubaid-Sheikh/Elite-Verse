@@ -1,94 +1,17 @@
-'use client'
-import { useState } from "react";
-import { AnimatedBg } from "./AnimatedBg"
-
-const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-        ...prevData,
-        [name]: value,
-    }));
-};
-
-const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-        const response = await fetch('/api/sendEmail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
-
-        if (response.ok) {
-            alert("Succesfully Sent")
-            setFormData({
-                name: '',
-                email: '',
-                projectIdea: ''
-            })
-        } else {
-            alert("Not Send")
-        }
-    } catch (error) {
-        alert("Error Sending Email")
-    }
-};
 
 const CTA = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        projectIdea: '',
-    });
-
-
     return (
-        <AnimatedBg className="flex items- flex-col lg:flex-row">
-            <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl font-bold text-center text-black dark:text-white font-sans tracking-tight">
-                Ready to Elevate your Brand?{" "}
-                <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-                    <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-mainyellow via-yellow-400 to-lightyellow [text-shadow:0_0_rgba(0,0,0,0.1)]">
-                        <span className="">Let's Talk</span>
-                    </div>
-                    <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-mainyellow via-yellow-400 to-lightyellow  py-4">
-                        <span className="">Let's Talk</span>
-                    </div>
-                </div>
-            </h2>
+        <div className='w-full mt-20 flex justify-center items-center font-raleway'>
+            <div className="md:w-[90%] w-full h-[500px] shadow-lg text-white rounded-3xl flex flex-col justify-center items-center bg-[url('/img/cta-bg.png')] bg-cover bg-no-repeat bg-center">
 
-            <form className="flex flex-col gap-3 px-5">
-                <section className="flex md:flex-row flex-col md:gap-5 gap-3 text-white">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        className="p-3 rounded-[1.2rem] bg-bgblue outline-none"
-                        value={formData.name}
-                        onChange={handleChange}
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        className="p-3 sm:w-[400px] rounded-[1.2rem] bg-bgblue outline-none"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
+                <section className="flex flex-col items-center">
+                    <h1 className="bg-[linear-gradient(45deg,#2e5799,#597ebe,#4a85f2)] text-transparent bg-clip-text text-[70px] font-bold">Let's Talk</h1>
+                    <p className="text-xl font-semibold w-[50%] md:w-full text-center">Ready to Elevate your brand ? Book a free consultation call and get started !</p>
                 </section>
-                <textarea
-                    cols="30"
-                    rows="6"
-                    name="projectIdea"
-                    className="bg-bgblue rounded-[1.2rem] p-3 text-white outline-none"
-                    placeholder="Your Project Idea"
-                    value={formData.projectIdea}
-                    onChange={handleChange}
-                />
-                <button className="bg-lightblue py-3 px-10 rounded-full text-white font-bold mx-auto" onClick={handleSubmit}>Send your message</button>
-            </form>
-        </AnimatedBg>
+                <button className="mt-5 py-2 px-5 text-lg font-semibold hover:bg-lightyellow transition-all ease-in-out rounded-full bg-mainblue">Book a Consultation Call</button>
+
+            </div>
+        </div>
     )
 }
 
