@@ -117,13 +117,15 @@ const About = () => {
               <h2 className="text-2xl font-bold mb-4 text-lightyellow">Why We Are The Ultimate Choice ?</h2>
               <button onClick={() => { setModalOpen(false) }}><ImCross color="#fff" /></button>
             </div>
-            <p className="mb-4 italic text-white text-[15px] font-medium leading-normal">
-              "At Elite Verse, we pride ourselves on delivering results that go beyond average—we deliver at an elite level. Our expertise spans website development, personal branding, social media marketing, SEO, and UI-UX design. In today’s digital world, a strong online presence is crucial for success, and we are dedicated to helping you achieve just that.<br />
-              Our team of highly skilled professionals is committed to creating websites that not only look stunning but also function seamlessly. We believe in the power of a well-crafted online presence, which is why we offer personalized branding strategies that resonate with your target audience. From engaging social media campaigns to effective SEO tactics, we ensure that your brand stands out. <br />
-              At Elite Verse, we take a client-first approach. We listen, understand your unique needs, and provide solutions that are tailored specifically for you. Our UI-UX designs ensure a smooth and enjoyable experience that keeps visitors coming back. <br />
-              We are not just a service provider; we are your partners in growth. Our goal is to see your business thrive, bringing the expertise, creativity, and dedication to make it happen. Trust us to elevate your digital presence with results that are truly elite.<br />
-              Thank you for considering Elite Verse. We look forward to working with you and turning your vision into reality. Book a free consultation call with me today, and let’s start your journey to success."
-            </p>
+            <div className="flex items-start overflow-y-scroll h-[400px]">
+              <p className="mb-4 italic text-white text-[15px] font-medium leading-normal">
+                "At Elite Verse, we pride ourselves on delivering results that go beyond average—we deliver at an elite level. Our expertise spans website development, personal branding, social media marketing, SEO, and UI-UX design. In today’s digital world, a strong online presence is crucial for success, and we are dedicated to helping you achieve just that.<br />
+                Our team of highly skilled professionals is committed to creating websites that not only look stunning but also function seamlessly. We believe in the power of a well-crafted online presence, which is why we offer personalized branding strategies that resonate with your target audience. From engaging social media campaigns to effective SEO tactics, we ensure that your brand stands out. <br />
+                At Elite Verse, we take a client-first approach. We listen, understand your unique needs, and provide solutions that are tailored specifically for you. Our UI-UX designs ensure a smooth and enjoyable experience that keeps visitors coming back. <br />
+                We are not just a service provider; we are your partners in growth. Our goal is to see your business thrive, bringing the expertise, creativity, and dedication to make it happen. Trust us to elevate your digital presence with results that are truly elite.<br />
+                Thank you for considering Elite Verse. We look forward to working with you and turning your vision into reality. Book a free consultation call with me today, and let’s start your journey to success."
+              </p>
+            </div>
             <hr />
             <div className="flex items-center justify-center">
               <Link
