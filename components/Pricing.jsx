@@ -79,7 +79,7 @@ const Pricing = () => {
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
-            className="py-20 mt-10 bg-bgblue rounded-xl flex flex-col duration-300 ease-in-out animate__animated animate__zoomIn animate-delay-1s w-full sm:w-full lg:w-[350px]"
+            className="py-20 mt-10 bg-bgblue rounded-2xl flex flex-col duration-300 ease-in-out animate__animated animate__zoomIn animate-delay-1s w-full sm:w-full lg:w-[350px]"
           >
             <div className="flex justify-center items-center flex-col bg-[linear-gradient(45deg,#FFD700,#FFB700,#FF8C00)] text-transparent bg-clip-text font-bold">
               <h1 className="text-[22px] italic">{`"${plan.planName}"`}</h1>

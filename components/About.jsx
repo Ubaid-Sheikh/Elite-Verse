@@ -112,7 +112,7 @@ const About = () => {
             onClick={() => setModalOpen(false)}
           ></div>
           {/* Modal Content */}
-          <div className="bg-darkblue text-center rounded-lg p-6 z-10 max-w-[800px] w-full font-raleway flex flex-col gap-4 animate__animated animate__fadeInDown animate-delay-1s">
+          <div className="bg-darkblue text-center rounded-lg p-6 z-10 max-h-[90vh] max-w-[800px] w-full font-raleway flex flex-col gap-4 animate__animated animate__fadeInDown animate-delay-1s">
             <div className="flex justify-between">
               <h2 className="text-2xl font-bold mb-4 text-lightyellow">Why We Are The Ultimate Choice ?</h2>
               <button onClick={() => { setModalOpen(false) }}><ImCross color="#fff" /></button>
